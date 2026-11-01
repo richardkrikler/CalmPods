@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Si vifaa vyote vya Android vinavyosaidia kikamilifu vipengele vya ziada vya AirPod. Mfumo wako wa uendeshaji unahitaji utekelezaji sahihi wa Bluetooth ya Nishati ya Chini.</string>
     <string name="onboarding_body3">CAPod haina matangazo na haikusanyi data yako.</string>
     <string name="onboarding_body4">Unaweza kuboresha hadi CAPod Pro kupata vipengele vya ziada na kusaidia maendeleo.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Haipatikani</string>
     <string name="general_error_label">Hitilafu</string>

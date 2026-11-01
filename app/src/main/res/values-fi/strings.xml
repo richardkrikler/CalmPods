@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Kaikki Android-laitteet eivät täysin tue ylimääräisiä AirPod-ominaisuuksia. Käyttöjärjestelmäsi vaatii oikein toimivan Bluetooth Low Energy -toteutuksen.</string>
     <string name="onboarding_body3">CAPodissa ei ole mainoksia eikä se kerää tietojasi.</string>
     <string name="onboarding_body4">Voit päivittää CAPod Prohon saadaksesi lisäominaisuuksia ja tukeaksesi kehitystä.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Ei saatavilla</string>
     <string name="general_error_label">Virhe</string>

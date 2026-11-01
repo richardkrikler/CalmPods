@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Vse naprave Android ne podpirajo v celoti dodatnih funkcij AirPod. Vaš operacijski sistem zahteva pravilno delujočo implementacijo Bluetooth z nizko porabo energije.</string>
     <string name="onboarding_body3">CAPod nima oglasov in ne zbira vaših podatkov.</string>
     <string name="onboarding_body4">Za dodatne funkcije in podporo razvoju lahko nadgradite na CAPod Pro.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Ni podatka</string>
     <string name="general_error_label">Napaka</string>

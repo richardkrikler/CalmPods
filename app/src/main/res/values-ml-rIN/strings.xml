@@ -166,7 +166,7 @@
     <string name="onboarding_body2">എല്ലാ Android ഉപകരണങ്ങളും അധിക AirPod സവിശേഷതകളെ പൂർണ്ണമായി പിന്തുണയ്ക്കുന്നില്ല. നിങ്ങളുടെ ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തിന് ശരിയായി പ്രവർത്തിക്കുന്ന ബ്ലൂടൂത്ത്-ലോ-എനർജി നടപ്പിലാക്കൽ ആവശ്യമാണ്.</string>
     <string name="onboarding_body3">CAPod-ൽ പരസ്യങ്ങളൊന്നുമില്ല, അത് നിങ്ങളുടെ ഡാറ്റ ശേഖരിക്കുന്നില്ല.</string>
     <string name="onboarding_body4">അധിക സവിശേഷതകൾ നേടാനും വികസനത്തെ പിന്തുണയ്ക്കാനും നിങ്ങൾക്ക് CAPod Pro-ലേക്ക് അപ്‌ഗ്രേഡ് ചെയ്യാം.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">ലഭ്യമല്ല</string>
     <string name="general_error_label">പിശക്</string>

@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Tüm Android cihazlar ekstra AirPod özelliklerini tam olarak desteklemez. İşletim sisteminiz doğru çalışan bir Bluetooth-Düşük Enerji uygulaması gerektirir.</string>
     <string name="onboarding_body3">CAPod\'da reklam yoktur ve verilerinizi toplamaz.</string>
     <string name="onboarding_body4">Ekstra özellikler kazanmak ve geliştirmeyi desteklemek için CAPod Pro\'ya yükseltebilirsiniz.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">N/A</string>
     <string name="general_error_label">Hata</string>

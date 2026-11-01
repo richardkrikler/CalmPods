@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Ekki öll Android tæki styðja að fullu viðbótar AirPod eiginleika. Stýrikerfið þitt krefst rétt virkandi Bluetooth-Low-Energy útfærslu.</string>
     <string name="onboarding_body3">CAPod hefur engar auglýsingar og safnar ekki gögnunum þínum.</string>
     <string name="onboarding_body4">Þú getur uppfært í CAPod Pro til að fá viðbótareiginleika og styðja við þróun.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Ekki tiltækt</string>
     <string name="general_error_label">Villa</string>

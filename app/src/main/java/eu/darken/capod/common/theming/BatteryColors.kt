@@ -33,6 +33,10 @@ data class BatteryColors(
             warnText = Color(0xFFFFCC80),
             positiveText = Color(0xFFA5D6A7),
         )
+
+        // CalmPods: E-ink panels show no colour, so warnings are carried by text/icons, not hue.
+        val EinkLight = BatteryColors(warnFill = Color.Black, warnText = Color.Black, positiveText = Color.Black)
+        val EinkDark = BatteryColors(warnFill = Color.White, warnText = Color.White, positiveText = Color.White)
     }
 }
 

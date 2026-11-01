@@ -1,11 +1,7 @@
 package eu.darken.capod.main.ui.overview.cards.components
 
-import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -105,17 +101,8 @@ fun AncModeSelector(
     )
     // While a mode change is in flight the thumb stays hollow and breathes; it only fills in solid
     // once the pods confirm the new mode.
-    val pendingFill = if (isPending) {
-        val pulse by rememberInfiniteTransition(label = "ancPending").animateFloat(
-            initialValue = 0.10f,
-            targetValue = 0.30f,
-            animationSpec = infiniteRepeatable(tween(900), RepeatMode.Reverse),
-            label = "ancPendingPulse",
-        )
-        pulse
-    } else {
-        0f
-    }
+    // CalmPods: no breathing on E-ink, an infinite animation keeps the panel refreshing.
+    val pendingFill = if (isPending) 0.2f else 0f
 
     val accent = MaterialTheme.colorScheme.primary
     val activeContent = if (isPending) accent else MaterialTheme.colorScheme.onPrimary

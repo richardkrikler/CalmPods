@@ -72,7 +72,8 @@ enum class Permission(
         descriptionRes = R.string.permission_system_alert_window_description,
         permissionId = "android.permission.SYSTEM_ALERT_WINDOW",
         isGranted = {
-            android.provider.Settings.canDrawOverlays(it)
+            android.provider.Settings.canDrawOverlays(it) ||
+                eu.darken.capod.reaction.ui.popup.PopUpOverlayService.isEnabled(it)
         },
     ),
     POST_NOTIFICATIONS(

@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Nie všetky zariadenia so systémom Android plne podporujú ďalšie funkcie AirPod. Váš operačný systém vyžaduje správne fungujúcu implementáciu Bluetooth-Low-Energy.</string>
     <string name="onboarding_body3">CAPod nemá žiadne reklamy a nezhromažďuje vaše údaje.</string>
     <string name="onboarding_body4">Môžete upgradovať na CAPod Pro, aby ste získali ďalšie funkcie a podporili vývoj.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Nedostupné</string>
     <string name="general_error_label">Chyba</string>

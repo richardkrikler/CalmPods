@@ -166,7 +166,7 @@
     <string name="onboarding_body2">すべてのAndroidデバイスが追加のAirPod機能を完全にサポートしているわけではありません。オペレーティングシステムには、正しく機能するBluetooth Low Energyの実装が必要です。</string>
     <string name="onboarding_body3">CAPodには広告がなく、データを収集しません。</string>
     <string name="onboarding_body4">追加機能を利用して開発をサポートするために、CAPod Proにアップグレードできます。</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">該当なし</string>
     <string name="general_error_label">エラー</string>

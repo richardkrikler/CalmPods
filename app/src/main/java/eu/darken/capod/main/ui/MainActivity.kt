@@ -2,6 +2,10 @@ package eu.darken.capod.main.ui
 
 import android.content.Intent
 import android.os.Bundle
+import eu.darken.capod.common.eink.Meink
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.togetherWith
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.MaterialTheme
@@ -60,6 +64,7 @@ class MainActivity : Activity2() {
         super.onCreate(savedInstanceState)
         installSplashScreen()
         enableEdgeToEdge()
+        window.setWindowAnimations(0)
 
         if (intent?.getBooleanExtra(EXTRA_UPGRADE_FOR_RESULT, false) == true) {
             lifecycleScope.launch {
@@ -106,6 +111,10 @@ class MainActivity : Activity2() {
                 CompositionLocalProvider(LocalNavigationController provides navCtrl) {
                     NavDisplay(
                         backStack = backStack,
+                        // CalmPods: no screen transitions on E-ink.
+                        transitionSpec = { EnterTransition.None togetherWith ExitTransition.None },
+                        popTransitionSpec = { EnterTransition.None togetherWith ExitTransition.None },
+                        predictivePopTransitionSpec = { EnterTransition.None togetherWith ExitTransition.None },
                         onBack = {
                             if (!navCtrl.up()) {
                                 finish()
@@ -131,6 +140,7 @@ class MainActivity : Activity2() {
 
     override fun onResume() {
         super.onResume()
+        Meink.apply(this)
         popUpWindow.isMainActivityVisible = true
         popUpWindow.close()
         // Per-resume, unthrottled entitlement reconciliation. This is what heals a renewal state

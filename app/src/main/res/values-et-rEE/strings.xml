@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Vaid mõned Androidi seadmed toetavad kõiki AirPodi võimalusi. Operatsioonisüsteem vajab õigesti toimivat madalama energiatarbimisega Bluetoothi tuge.</string>
     <string name="onboarding_body3">CAPodis pole reklaame ja see ei kogu andmeid.</string>
     <string name="onboarding_body4">Lisavõimaluste saamiseks ja arendamise toetamiseks soetage CAPod Pro.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%2$s %1$s</string>
     <string name="general_value_not_available_label">Pole saadaval</string>
     <string name="general_error_label">Viga</string>

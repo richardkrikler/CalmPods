@@ -150,12 +150,8 @@ fun OverviewScreenHost(vm: OverviewViewModel = hiltViewModel()) {
 
                 Permission.SYSTEM_ALERT_WINDOW -> {
                     awaitingPermission = true
-                    context.startActivity(
-                        Intent(
-                            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                            "package:${context.packageName}".toUri()
-                        )
-                    )
+                    // CalmPods: the accessibility overlay replaces "draw over other apps".
+                    context.startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
                 }
 
                 else -> {
@@ -625,7 +621,7 @@ private fun ToolbarTitle(upgradeInfo: UpgradeRepo.Info) {
 
     Text(
         text = brandTitle(
-            includeQualifier = upgradeInfo.isPro,
+            includeQualifier = false, // CalmPods: plain title, no coloured FOSS badge
             highlightQualifier = upgradeInfo.isPro,
             highlightColor = highlight,
         ),

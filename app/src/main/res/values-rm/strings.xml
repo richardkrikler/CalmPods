@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Betg tut ils apparats Android sustegnan cumplainamain las funcziuns supplementaras dad AirPods. Voss sistem operativ dovra in\'implementaziun da Bluetooth-Low-Energy che funcziuna correctamain.</string>
     <string name="onboarding_body3">CAPod n\'ha nagina reclama e na collecziunescha betg Vossas datas.</string>
     <string name="onboarding_body4">Vus pudais actualisar sin CAPod Pro per obtegnair funcziuns supplementaras e sustegnair il svilup.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">N/A</string>
     <string name="general_error_label">Errur</string>

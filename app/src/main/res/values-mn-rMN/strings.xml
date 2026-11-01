@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Бүх Android төхөөрөмж AirPod-н нэмэлт функцуудыг бүрэн дэмждэггүй. Таны үйлдлийн системд зөв ажилладаг Bluetooth-Low-Energy-н хэрэгжилт шаардлагатай.</string>
     <string name="onboarding_body3">CAPod-д зар сурталчилгаа байхгүй бөгөөд таны өгөгдлийг цуглуулдаггүй.</string>
     <string name="onboarding_body4">Нэмэлт функцуудыг авах, хөгжүүлэлтийг дэмжихийн тулд CAPod Pro руу шинэчилж болно.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Байхгүй</string>
     <string name="general_error_label">Алдаа</string>

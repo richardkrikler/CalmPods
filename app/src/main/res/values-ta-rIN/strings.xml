@@ -166,7 +166,7 @@
     <string name="onboarding_body2">எல்லா ஆண்ட்ராய்டு சாதனங்களும் கூடுதல் AirPod அம்சங்களை முழுமையாக ஆதரிக்காது. உங்கள் இயக்க முறைமைக்கு சரியாக வேலை செய்யும் புளூடூத்-குறைந்த-ஆற்றல் செயலாக்கம் தேவை.</string>
     <string name="onboarding_body3">CAPod இல் விளம்பரங்கள் இல்லை மற்றும் உங்கள் தரவைச் சேகரிக்காது.</string>
     <string name="onboarding_body4">கூடுதல் அம்சங்களைப் பெறவும் மேம்பாட்டை ஆதரிக்கவும் நீங்கள் CAPod Pro க்கு மேம்படுத்தலாம்.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">கிடைக்கவில்லை</string>
     <string name="general_error_label">பிழை</string>

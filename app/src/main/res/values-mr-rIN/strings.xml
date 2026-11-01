@@ -166,7 +166,7 @@
     <string name="onboarding_body2">सर्व Android डिव्हाइस अतिरिक्त AirPod वैशिष्ट्यांना पूर्णपणे समर्थन देत नाहीत. तुमच्या ऑपरेटिंग सिस्टमला योग्यरित्या कार्य करणारे ब्लूटूथ-लो-एनर्जी अंमलबजावणी आवश्यक आहे.</string>
     <string name="onboarding_body3">CAPod मध्ये कोणत्याही जाहिराती नाहीत आणि तुमचा डेटा गोळा करत नाही.</string>
     <string name="onboarding_body4">अतिरिक्त वैशिष्ट्ये मिळवण्यासाठी आणि विकासाला समर्थन देण्यासाठी तुम्ही CAPod Pro वर श्रेणीसुधारित करू शकता.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">उपलब्ध नाही</string>
     <string name="general_error_label">त्रुटी</string>

@@ -15,6 +15,7 @@ android {
 
     defaultConfig {
         namespace = projectConfig.packageName
+        applicationId = "at.richardkrikler.calmpods"
 
         minSdk = projectConfig.minSdk
         targetSdk = projectConfig.targetSdk
@@ -24,7 +25,7 @@ android {
 
         testInstrumentationRunner = "eu.darken.capod.HiltTestRunner"
 
-        buildConfigField("String", "PACKAGENAME", "\"${projectConfig.packageName}\"")
+        buildConfigField("String", "PACKAGENAME", "\"at.richardkrikler.calmpods\"")
         buildConfigField("String", "VERSION_CODE", "\"${projectConfig.version.code}\"")
         buildConfigField("String", "VERSION_NAME", "\"${projectConfig.version.name}\"")
     }
@@ -138,6 +139,8 @@ android {
 }
 
 androidComponents {
+    // CalmPods: the Kompakt has no Google Play services, so the gplay flavor is never built.
+    beforeVariants { it.enable = it.flavorName != "gplay" }
     onVariants { variant ->
         val buildType = variant.buildType ?: return@onVariants
         if (buildType != "release" && buildType != "beta") return@onVariants
@@ -197,6 +200,8 @@ dependencies {
     addSerialization()
 
     addTesting()
+
+    implementation("com.mudita:MMD:1.0.2")
 
     "gplayImplementation"("com.android.billingclient:billing:8.3.0")
     "gplayImplementation"("com.android.billingclient:billing-ktx:8.3.0")

@@ -166,7 +166,7 @@
     <string name="onboarding_body2">सभी एंड्रॉइड डिवाइस अतिरिक्त एयरपॉड सुविधाओं का पूरी तरह से समर्थन नहीं करते हैं। आपके ऑपरेटिंग सिस्टम को सही ढंग से काम करने वाले ब्लूटूथ-लो-एनर्जी कार्यान्वयन की आवश्यकता है।</string>
     <string name="onboarding_body3">CAPod में कोई विज्ञापन नहीं है और यह आपका डेटा एकत्र नहीं करता है।</string>
     <string name="onboarding_body4">अतिरिक्त सुविधाएँ प्राप्त करने और विकास का समर्थन करने के लिए आप CAPod Pro में अपग्रेड कर सकते हैं।</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">उपलब्ध नहीं</string>
     <string name="general_error_label">त्रुटि</string>

@@ -166,7 +166,7 @@
     <string name="onboarding_body2">همه دستگاه‌های Android به‌طور کامل از ویژگی‌های اضافی AirPod پشتیبانی نمی‌کنند. سیستم‌عامل شما به یک پیاده‌سازی بلوتوث کم‌مصرف که به‌درستی کار کند نیاز دارد.</string>
     <string name="onboarding_body3">CAPod هیچ تبلیغی ندارد و داده‌های شما را جمع‌آوری نمی‌کند.</string>
     <string name="onboarding_body4">می‌توانید برای دریافت ویژگی‌های اضافی و حمایت از توسعه، به CAPod Pro ارتقا دهید.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">ندارد</string>
     <string name="general_error_label">خطا</string>

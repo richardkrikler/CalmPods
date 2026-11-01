@@ -167,7 +167,7 @@ AL_Cool_T</string>
     <string name="onboarding_body2">Не все устройства Android полностью поддерживают дополнительные функции AirPod. Вашей операционной системе требуется корректно работающая версия Bluetooth-Low-Energy.</string>
     <string name="onboarding_body3">CAPod не содержит рекламы и не собирает Ваши данные.</string>
     <string name="onboarding_body4">Вы можете обновиться до CAPod Pro для дополнительных функций и поддержки разработки.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Недоступно</string>
     <string name="general_error_label">Ошибка</string>

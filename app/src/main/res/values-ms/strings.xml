@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Tidak semua peranti Android menyokong sepenuhnya ciri AirPod tambahan. Sistem pengendalian anda memerlukan pelaksanaan Bluetooth Tenaga Rendah yang berfungsi dengan betul.</string>
     <string name="onboarding_body3">CAPod tiada iklan dan tidak mengumpul data anda.</string>
     <string name="onboarding_body4">Anda boleh menaik taraf kepada CAPod Pro untuk mendapatkan ciri tambahan dan menyokong pembangunan.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Tidak tersedia</string>
     <string name="general_error_label">Ralat</string>

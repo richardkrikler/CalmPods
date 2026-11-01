@@ -166,7 +166,7 @@
     <string name="onboarding_body2">لا تدعم جميع الأجهزة التي تعمل بنظام أندرويد مزايا أيربودز الإضافية بشكلٍ كامل. يتطلّب نظام التشغيل الخاصّ بك تطبيقًا صحيحًا لتقنية بلوتوث منخفضة الطاقة.</string>
     <string name="onboarding_body3">لا يحتوي كابود على إعلانات ولا يجمع بياناتك.</string>
     <string name="onboarding_body4">يمكنك الترقية إلى النسخة الاحترافية من كابود للحصول على مزايا إضافيةٍ ودعم التطوير.</string>
-    <string name="app_name">كابود</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s – %2$s</string>
     <string name="general_value_not_available_label">غ/م</string>
     <string name="general_error_label">خطأ</string>

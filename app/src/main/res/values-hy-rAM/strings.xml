@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Ոչ բոլոր Android սարքերն են լիովին աջակցում AirPod-ի լրացուցիչ գործառույթները։ Ձեր օպերացիոն համակարգը պահանջում է Bluetooth-Low-Energy-ի ճիշտ աշխատող իրականացում։</string>
     <string name="onboarding_body3">CAPod-ը գովազդ չունի և չի հավաքում ձեր տվյալները։</string>
     <string name="onboarding_body4">Դուք կարող եք թարմացնել CAPod Pro-ին՝ լրացուցիչ գործառույթներ ստանալու և մշակմանն աջակցելու համար։</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Հասանելի չէ</string>
     <string name="general_error_label">Սխալ</string>

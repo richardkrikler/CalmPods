@@ -54,8 +54,8 @@ class BatteryColorsThemeTest : BaseComposeRobolectricTest() {
     fun `the light theme uses the light tokens`() {
         val resolved = resolve(ThemeMode.LIGHT)
 
-        resolved.warnFill shouldBe BatteryColors.Light.warnFill
-        resolved.warnText shouldBe BatteryColors.Light.warnText
+        resolved.warnFill shouldBe BatteryColors.EinkLight.warnFill
+        resolved.warnText shouldBe BatteryColors.EinkLight.warnText
     }
 
     @Test
@@ -64,8 +64,8 @@ class BatteryColorsThemeTest : BaseComposeRobolectricTest() {
         // isSystemInDarkTheme() read inside the mapper would get wrong.
         val resolved = resolve(ThemeMode.DARK)
 
-        resolved.warnFill shouldBe BatteryColors.Dark.warnFill
-        resolved.warnText shouldBe BatteryColors.Dark.warnText
+        resolved.warnFill shouldBe BatteryColors.EinkDark.warnFill
+        resolved.warnText shouldBe BatteryColors.EinkDark.warnText
     }
 
     @Test

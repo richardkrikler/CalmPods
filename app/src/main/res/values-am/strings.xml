@@ -166,7 +166,7 @@
     <string name="onboarding_body2">ሁሉም የአንድሮይድ መሳሪያዎች ተጨማሪ የኤርፖድ ባህሪያትን ሙሉ በሙሉ አይደግፉም። የእርስዎ ኦፐሬቲንግ ሲስተም በትክክል የሚሰራ የብሉቱዝ-ዝቅተኛ-ኃይል ትግበራ ይፈልጋል።</string>
     <string name="onboarding_body3">CAPod ምንም ማስታወቂያ የለውም እና የእርስዎን መረጃ አይሰበስብም።</string>
     <string name="onboarding_body4">ተጨማሪ ባህሪያትን ለማግኘት እና ልማትን ለመደገፍ ወደ CAPod Pro ማሻሻል ይችላሉ።</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">አይገኝም</string>
     <string name="general_error_label">ስህተት</string>

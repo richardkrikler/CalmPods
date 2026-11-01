@@ -166,7 +166,7 @@
     <string name="onboarding_body2">تمام اینڈرائیڈ آلات ایئر پوڈ کی اضافی خصوصیات کو مکمل طور پر سپورٹ نہیں کرتے ہیں۔ آپ کے آپریٹنگ سسٹم کو صحیح طریقے سے کام کرنے والے بلوٹوتھ-لو-انرجی نفاذ کی ضرورت ہے۔</string>
     <string name="onboarding_body3">CAPod میں کوئی اشتہار نہیں ہے اور یہ آپ کا ڈیٹا جمع نہیں کرتا ہے۔</string>
     <string name="onboarding_body4">آپ اضافی خصوصیات حاصل کرنے اور ترقی کی حمایت کرنے کے لئے CAPod Pro میں اپ گریڈ کر سکتے ہیں۔</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">دستیاب نہیں</string>
     <string name="general_error_label">خرابی</string>

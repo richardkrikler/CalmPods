@@ -166,7 +166,7 @@
     <string name="onboarding_body2">No todos los dispositivos Android son totalmente compatibles con las funciones adicionales de los AirPods. Tu sistema operativo requiere una implementación de Bluetooth de baja energía que funcione correctamente.</string>
     <string name="onboarding_body3">CAPod no contiene anuncios y no recopila tus datos.</string>
     <string name="onboarding_body4">Puedes actualizar a CAPod Pro para obtener funciones adicionales y apoyar el desarrollo.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">No disponible</string>
     <string name="general_error_label">Error</string>

@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Không phải tất cả các thiết bị Android đều hỗ trợ đầy đủ các tính năng bổ sung của AirPod. Hệ điều hành của bạn yêu cầu triển khai Bluetooth-Năng lượng thấp hoạt động chính xác.</string>
     <string name="onboarding_body3">CAPod không có quảng cáo và không thu thập dữ liệu của bạn.</string>
     <string name="onboarding_body4">Bạn có thể nâng cấp lên CAPod Pro để có thêm các tính năng và hỗ trợ phát triển.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Không có</string>
     <string name="general_error_label">Lỗi</string>

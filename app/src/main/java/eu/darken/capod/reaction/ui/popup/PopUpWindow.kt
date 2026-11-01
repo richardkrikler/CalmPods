@@ -34,7 +34,7 @@ class PopUpWindow @Inject constructor(
     private val generalSettings: GeneralSettings,
 ) {
 
-    private val windowManager = appContext.getSystemService(WINDOW_SERVICE) as WindowManager
+    private var windowManager: WindowManager? = null
     private val layoutParams = WindowManager.LayoutParams(
         WindowManager.LayoutParams.WRAP_CONTENT,
         WindowManager.LayoutParams.WRAP_CONTENT,
@@ -77,7 +77,18 @@ class PopUpWindow @Inject constructor(
             val owner = OverlayLifecycleOwner()
             lifecycleOwner = owner
 
-            val view = ComposeView(appContext).apply {
+            // CalmPods: prefer the accessibility overlay (no SYSTEM_ALERT_WINDOW, shows on lock screen).
+            val overlayService = PopUpOverlayService.instance
+            val hostContext: Context = overlayService ?: appContext
+            layoutParams.type = if (overlayService != null) {
+                WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY
+            } else {
+                WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
+            }
+            val wm = hostContext.getSystemService(WINDOW_SERVICE) as WindowManager
+            windowManager = wm
+
+            val view = ComposeView(hostContext).apply {
                 setViewTreeLifecycleOwner(owner)
                 setViewTreeSavedStateRegistryOwner(owner)
                 setContent {
@@ -95,7 +106,7 @@ class PopUpWindow @Inject constructor(
             owner.handleLifecycleEvent(Lifecycle.Event.ON_START)
             owner.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
 
-            windowManager.addView(view, layoutParams)
+            wm.addView(view, layoutParams)
         } catch (e: Exception) {
             log(TAG, ERROR) { "open() failed: ${e.asLog()}" }
         }
@@ -119,9 +130,10 @@ class PopUpWindow @Inject constructor(
             existing.handleLifecycleEvent(Lifecycle.Event.ON_DESTROY)
         }
         if (composeView?.parent != null) {
-            windowManager.removeView(composeView)
+            windowManager?.removeView(composeView)
         }
         composeView = null
+        windowManager = null
         lifecycleOwner = null
         deviceState = null
     }

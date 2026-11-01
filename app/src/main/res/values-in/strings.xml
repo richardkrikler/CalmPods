@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Tidak semua perangkat Android sepenuhnya mendukung fitur tambahan AirPod. Sistem operasi Anda memerlukan implementasi Bluetooth Hemat Energi yang berfungsi dengan baik.</string>
     <string name="onboarding_body3">CAPod tidak memiliki iklan dan tidak mengumpulkan data Anda.</string>
     <string name="onboarding_body4">Anda dapat meningkatkan ke CAPod Pro untuk mendapatkan fitur tambahan dan mendukung pengembangan.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">Tidak Tersedia</string>
     <string name="general_error_label">Kesalahan</string>

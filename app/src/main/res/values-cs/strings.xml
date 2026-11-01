@@ -166,7 +166,7 @@
     <string name="onboarding_body2">Ne všechna zařízení s Androidem plně podporují speciální funkce AirPods.</string>
     <string name="onboarding_body3">CAPod neobsahuje žádné reklamy a neshromažďuje vaše údaje.</string>
     <string name="onboarding_body4">Chcete-li získat speciální funkce a podpořit vývoj, můžete přejít na verzi CAPod Pro.</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">N/A</string>
     <string name="general_error_label">Chyba</string>

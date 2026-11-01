@@ -130,7 +130,8 @@ class UpgradeRepoFoss @Inject constructor(
     }
 
     data class Info(
-        override val isPro: Boolean = false,
+        // CalmPods: everything is unlocked; support the CAPod author via UPGRADE_SITE instead.
+        override val isPro: Boolean = true,
         override val upgradedAt: Instant? = null,
         val upgradeReason: FossUpgrade.Reason? = null,
         override val error: Throwable? = null,

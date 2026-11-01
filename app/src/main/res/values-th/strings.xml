@@ -166,7 +166,7 @@
     <string name="onboarding_body2">อุปกรณ์ Android บางรุ่นไม่รองรับคุณสมบัติพิเศษของ AirPod ทั้งหมด ระบบปฏิบัติการของคุณต้องมีการใช้งาน Bluetooth Low Energy ที่ทำงานได้อย่างถูกต้อง</string>
     <string name="onboarding_body3">CAPod ไม่มีโฆษณาและไม่รวบรวมข้อมูลของคุณ</string>
     <string name="onboarding_body4">คุณสามารถอัปเกรดเป็น CAPod Pro เพื่อรับคุณสมบัติเพิ่มเติมและสนับสนุนการพัฒนา</string>
-    <string name="app_name">CAPod</string>
+    <string name="app_name">CalmPods</string>
     <string name="app_name_upgraded_template">%1$s %2$s</string>
     <string name="general_value_not_available_label">ไม่พร้อมใช้งาน</string>
     <string name="general_error_label">ข้อผิดพลาด</string>
