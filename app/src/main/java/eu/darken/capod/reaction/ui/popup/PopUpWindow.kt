@@ -177,6 +177,6 @@ class PopUpWindow @Inject constructor(
 
     companion object {
         private val TAG = logTag("Reaction", "PopUp", "Window")
-        private const val MIN_VISIBLE_MS = 8_000L
+        private const val MIN_VISIBLE_MS = 5_000L
     }
 }
