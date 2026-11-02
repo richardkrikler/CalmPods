@@ -216,8 +216,6 @@
     <string name="permission_background_location_description">يستخدم كابود خاصّية ”الوصول إلى الموقع في الخلفية“ لتمكين مزايا مثل ”إرسال إشعارٍ منبثق“ و”الاتّصال التلقائي“ حتّى عند إغلاق التطبيق. يسمح هذا الوصول للتطبيق باستقبال بيانات بلوتوث منخفضة الطاقة (BLE) في أثناء تشغيله في الخلفية. مع ذلك، لن يستخدم هذا التطبيق بيانات البلوتوث لتحديد موقعك.</string>
     <string name="permission_ignore_battery_optimizations_label">تعطيل تحسينات البطارية</string>
     <string name="permission_ignore_battery_optimizations_description">تعمل تحسينات البطّارية على منع هذا التطبيق من استقبال بيانات البلوتوث بشكلٍ موثوقٍ في أثناء تشغيل التطبيق في الخلفية.</string>
-    <string name="permission_system_alert_window_label">نافذة تنبيه النظام</string>
-    <string name="permission_system_alert_window_description">اسمح لـ CAPod بالرسم فوق التطبيقات الأخرى. مطلوب لميزة \"عرض النافذة المنبثقة\" ولفتح المساعد الصوتي عند الضغط على سماعات AirPods.</string>
     <string name="settings_reaction_autoconnect_whenseen_label">عند الرؤية</string>
     <string name="settings_reaction_autoconnect_caseopen_label">الحافظة مفتوحة</string>
     <string name="settings_reaction_autoconnect_inear_label">في الأذن</string>
@@ -291,7 +289,7 @@
     <string name="battery_time_remaining_format_h">%1$dس</string>
     <string name="battery_time_remaining_format_m">%1$dد</string>
     <string name="permission_post_notifications_label">إظهار الإشعارات</string>
-    <string name="permission_post_notifications_description">"السماح لـ CAPod بعرض إشعارات حول AirPods، مثل حالتها الحالية أثناء الاتصال."</string>
+    <string name="permission_post_notifications_description">"السماح لـ CalmPods بعرض إشعارات حول AirPods، مثل حالتها الحالية أثناء الاتصال."</string>
     <string name="profiles_empty_title">لم يتم تكوين ملفات تعريف الأجهزة</string>
     <string name="profiles_empty_description">أنشئ ملفات تعريف للأجهزة لإدارة أجهزة متعددة بإعدادات وأولويات مخصصة.</string>
     <string name="profiles_add_action">إضافة ملف تعريف</string>
@@ -314,9 +312,9 @@
     <string name="profiles_signal_quality_title">الحد الأدنى لجودة الإشارة</string>
     <string name="profiles_signal_quality_description">كشف الأجهزة التي تتجاوز قوة إشارتها هذا الحد فقط. القيم المنخفضة تزيد نطاق الكشف ولكنها قد تسبب نتائج إيجابية خاطئة. لا تضع هذا عاليًا جدًا - استقبال Bluetooth ضعيف بشكل عام ويتغير مع المسافة والعوائق.</string>
     <string name="profiles_identitykey_label">مفتاح الهوية</string>
-    <string name="profiles_maindevice_identitykey_explanation">تغير AirPods عنوان Bluetooth الخاص بها بشكل متكرر للخصوصية. يساعد IRK تطبيق CAPod في التعرف على جهازك. تحتاج إلى وصول لمرة واحدة إلى MacBook.</string>
+    <string name="profiles_maindevice_identitykey_explanation">تغير AirPods عنوان Bluetooth الخاص بها بشكل متكرر للخصوصية. يساعد IRK تطبيق CalmPods في التعرف على جهازك. تحتاج إلى وصول لمرة واحدة إلى MacBook.</string>
     <string name="profiles_maindevice_encryptionkey_label">مفتاح التشفير</string>
-    <string name="profiles_maindevice_encryptionkey_explanation">ترسل AirPods رسالة حالة، جزء منها مشفر. يسمح مفتاح التشفير لـ CAPod بفك تشفير الرسالة الكاملة. تحتاج إلى وصول لمرة واحدة إلى MacBook.</string>
+    <string name="profiles_maindevice_encryptionkey_explanation">ترسل AirPods رسالة حالة، جزء منها مشفر. يسمح مفتاح التشفير لـ CalmPods بفك تشفير الرسالة الكاملة. تحتاج إلى وصول لمرة واحدة إلى MacBook.</string>
     <string name="profiles_key_invalid_format">تنسيق مفتاح غير صالح</string>
     <string name="profiles_key_expected_format">التنسيق المتوقع: %1$s</string>
     <string name="profiles_key_status_configured">تم الضبط</string>
@@ -496,7 +494,7 @@
     <string name="overview_reactions_hint_body">يتم الآن تهيئة التشغيل التلقائي والإيقاف التلقائي والنوافذ المنبثقة لكل جهاز على حدة. انقر على أيقونة الإعدادات على البطاقة أثناء توصيل سماعاتك.</string>
     <string name="review_app_review_action">مراجعة</string>
     <string name="review_app_dismiss_action">ربما لاحقًا</string>
-    <string name="review_app_body">هل ترغب في ترك تعليق لـ CAPod؟ ❤️</string>
+    <string name="review_app_body">هل ترغب في ترك تعليق لـ CalmPods؟ ❤️</string>
     <string name="device_settings_microphone_mode_label">ميكروفون</string>
     <string name="device_settings_microphone_mode_description">سمّاعة الأذن المستخدمة كميكروفون</string>
     <string name="device_settings_microphone_mode_auto">تلقائي</string>
