@@ -180,9 +180,9 @@ fun SupportScreenHost(vm: SupportViewModel = hiltViewModel()) {
         SupportScreen(
             state = it,
             onNavigateUp = { vm.navUp() },
-            onContactDeveloper = { vm.goToContactSupport() },
+            onContactDeveloper = { vm.openUrl("https://github.com/richardkrikler/CalmPods/issues") }, // CalmPods: no email support
             onDiscord = { vm.openUrl("https://discord.gg/rrxxng35jq") },
-            onIssueTracker = { vm.openUrl("https://github.com/d4rken-org/capod/issues") },
+            onIssueTracker = { vm.openUrl("https://github.com/richardkrikler/CalmPods/issues") },
             onWiki = { vm.openUrl("https://github.com/d4rken-org/capod/wiki") },
             onTroubleShooter = { vm.goToTroubleShooter() },
             onDebugLogToggle = { vm.onDebugLogToggle() },

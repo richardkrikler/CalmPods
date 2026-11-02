@@ -51,7 +51,7 @@ fun SettingsScreenHost(vm: SettingsViewModel = hiltViewModel()) {
             onUpgradeStatus = { vm.navTo(Nav.Main.Upgrade(manage = true)) },
             onSupport = { vm.navTo(Nav.Settings.Support) },
             onWiki = { vm.openUrl("https://github.com/d4rken-org/capod/wiki") },
-            onChangelog = { vm.openUrl("https://capod.darken.eu/changelog") },
+            onChangelog = { vm.openUrl("https://github.com/richardkrikler/CalmPods/releases") },
             onHelpTranslate = { vm.openUrl("https://crowdin.com/project/capod") },
             onAcknowledgements = { vm.navTo(Nav.Settings.Acknowledgements) },
             onPrivacyPolicy = { vm.openUrl(PrivacyPolicy.URL) },

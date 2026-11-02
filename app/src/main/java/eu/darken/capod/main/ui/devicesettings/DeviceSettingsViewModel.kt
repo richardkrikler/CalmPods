@@ -565,7 +565,7 @@ class DeviceSettingsViewModel @Inject constructor(
     }
 
     fun openIssueTracker() {
-        webpageTool.open("https://github.com/d4rken-org/capod/issues")
+        webpageTool.open("https://github.com/richardkrikler/CalmPods/issues")
     }
 
     fun openAapCompatibilityTracker() {
