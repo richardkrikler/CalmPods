@@ -22,12 +22,15 @@ android {
 
         versionCode = projectConfig.version.code.toInt()
         versionName = projectConfig.version.name
+        // CalmPods: CI passes the tag as version, so upstream version.properties bumps never conflict.
+        System.getenv("VERSION_NAME")?.let { versionName = it }
+        System.getenv("VERSION_CODE")?.let { versionCode = it.toInt() }
 
         testInstrumentationRunner = "eu.darken.capod.HiltTestRunner"
 
         buildConfigField("String", "PACKAGENAME", "\"at.richardkrikler.calmpods\"")
-        buildConfigField("String", "VERSION_CODE", "\"${projectConfig.version.code}\"")
-        buildConfigField("String", "VERSION_NAME", "\"${projectConfig.version.name}\"")
+        buildConfigField("String", "VERSION_CODE", "\"${System.getenv("VERSION_CODE") ?: projectConfig.version.code}\"")
+        buildConfigField("String", "VERSION_NAME", "\"${System.getenv("VERSION_NAME") ?: projectConfig.version.name}\"")
     }
 
     // Enable automatic per-app language preferences generation
