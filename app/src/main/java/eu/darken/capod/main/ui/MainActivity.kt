@@ -2,7 +2,6 @@ package eu.darken.capod.main.ui
 
 import android.content.Intent
 import android.os.Bundle
-import eu.darken.capod.common.eink.Meink
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.togetherWith
@@ -140,7 +139,6 @@ class MainActivity : Activity2() {
 
     override fun onResume() {
         super.onResume()
-        Meink.apply(this)
         popUpWindow.isMainActivityVisible = true
         popUpWindow.close()
         // Per-resume, unthrottled entitlement reconciliation. This is what heals a renewal state

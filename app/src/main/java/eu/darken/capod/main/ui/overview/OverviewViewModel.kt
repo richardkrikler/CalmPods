@@ -198,7 +198,7 @@ class OverviewViewModel @Inject constructor(
     private val updateTicker = channelFlow<Unit> {
         while (isActive) {
             trySend(Unit)
-            delay(3000)
+            delay(30_000) // CalmPods: was 3s, only drives relative times
         }
     }
 
@@ -210,7 +210,9 @@ class OverviewViewModel @Inject constructor(
             deviceMonitor.devices
         }
         .catch { errorEvents.emitBlocking(it) }
-        .throttleLatest(1000)
+        // CalmPods: every emission redraws the E-ink panel; battery/case state changes slowly.
+        // ponytail: fixed 5s, make it a setting if someone wants snappier updates.
+        .throttleLatest(5000)
 
     val state = combine(
         updateTicker,

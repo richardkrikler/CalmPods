@@ -29,9 +29,9 @@ data class AppleDeviceProfile(
     @SerialName("reactionAutoPlay") val autoPlay: Boolean = false,
     @SerialName("reactionStartMusicOnWear") val startMusicOnWear: Boolean = false,
     @SerialName("reactionOnePodMode") val onePodMode: Boolean = false,
-    @SerialName("reactionAutoConnect") val autoConnect: Boolean = false,
-    @SerialName("reactionAutoConnectCondition") val autoConnectCondition: AutoConnectCondition = AutoConnectCondition.WHEN_SEEN,
-    @SerialName("reactionShowPopUpOnCaseOpen") val showPopUpOnCaseOpen: Boolean = false,
+    @SerialName("reactionAutoConnect") val autoConnect: Boolean = true, // CalmPods default
+    @SerialName("reactionAutoConnectCondition") val autoConnectCondition: AutoConnectCondition = AutoConnectCondition.CASE_OPEN,
+    @SerialName("reactionShowPopUpOnCaseOpen") val showPopUpOnCaseOpen: Boolean = true, // CalmPods default
     @SerialName("reactionShowPopUpOnConnection") val showPopUpOnConnection: Boolean = false,
     @SerialName("reactionConversationAction") val conversationAction: ConversationAction = ConversationAction.NOTHING,
     @SerialName("reactionConversationVolumeReduction") val conversationVolumeReduction: Int = ReactionConfig.DEFAULT_CONVERSATION_VOLUME_REDUCTION,
