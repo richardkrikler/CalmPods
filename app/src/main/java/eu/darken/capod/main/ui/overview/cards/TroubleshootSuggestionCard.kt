@@ -8,8 +8,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.Troubleshoot
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
+import com.mudita.mmd.components.buttons.ButtonMMD as Button
+import com.mudita.mmd.components.cards.CardMMD as Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

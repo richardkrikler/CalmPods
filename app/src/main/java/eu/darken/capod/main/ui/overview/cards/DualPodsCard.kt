@@ -24,10 +24,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.BatteryChargingFull
 import androidx.compose.material.icons.twotone.GridView
 import androidx.compose.material.icons.twotone.Tune
-import androidx.compose.material3.CardDefaults
+import com.mudita.mmd.components.cards.CardDefaultsMMD as CardDefaults
+import eu.darken.capod.common.theming.elevatedCardElevation
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ElevatedCard
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.cards.CardMMD as ElevatedCard
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme

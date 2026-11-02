@@ -12,11 +12,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
+import com.mudita.mmd.components.buttons.ButtonMMD as Button
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.BatteryChargingFull
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
+import com.mudita.mmd.components.cards.CardMMD as Card
+import com.mudita.mmd.components.cards.CardDefaultsMMD as CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -52,7 +52,7 @@ fun PopUpContent(
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(24.dp),
-            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            elevation = CardDefaults.cardElevation(),
         ) {
             Column(
                 modifier = Modifier

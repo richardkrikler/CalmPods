@@ -3,7 +3,7 @@ package eu.darken.capod.main.ui.overview.cards.components
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Switch
+import com.mudita.mmd.components.switcher.SwitchMMD as Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment

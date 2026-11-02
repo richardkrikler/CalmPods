@@ -9,8 +9,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.DevicesOther
 import androidx.compose.material.icons.twotone.Stars
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
+import com.mudita.mmd.components.buttons.ButtonMMD as Button
+import com.mudita.mmd.components.cards.CardMMD as Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

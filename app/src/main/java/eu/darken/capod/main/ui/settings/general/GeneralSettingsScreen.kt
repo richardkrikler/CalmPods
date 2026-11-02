@@ -3,7 +3,7 @@ package eu.darken.capod.main.ui.settings.general
 import android.os.Build
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
+import eu.darken.capod.common.theming.EinkLazyColumn as LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.twotone.ArrowBack
 import androidx.compose.material.icons.twotone.AccountTree
@@ -19,9 +19,9 @@ import androidx.compose.material.icons.automirrored.twotone.ViewList
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Switch
+import com.mudita.mmd.components.switcher.SwitchMMD as Switch
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
+import com.mudita.mmd.components.top_app_bar.TopAppBarMMD as TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

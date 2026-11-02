@@ -15,9 +15,9 @@ import androidx.compose.material.icons.twotone.Layers
 import androidx.compose.material.icons.twotone.MyLocation
 import androidx.compose.material.icons.twotone.Notifications
 import androidx.compose.material.icons.twotone.ShareLocation
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
+import com.mudita.mmd.components.buttons.ButtonMMD as Button
+import com.mudita.mmd.components.cards.CardMMD as Card
+import com.mudita.mmd.components.cards.CardDefaultsMMD as CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

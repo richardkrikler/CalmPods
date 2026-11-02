@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CalmPods: Mudita-style line glyph, two AirPods. Used as adaptive foreground and monochrome layer. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M43,51.8 L43,73 A3.5,3.5 0 0 0 50,73 L50,47.3 A11,11 0 1 0 43,51.8 Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FF000000"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M65,51.8 L65,73 A3.5,3.5 0 0 1 58,73 L58,47.3 A11,11 0 1 1 65,51.8 Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FF000000"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M33.8,38 a2.2,3.2 0 1 0 4.4,0 a2.2,3.2 0 1 0 -4.4,0 Z M69.8,38 a2.2,3.2 0 1 0 4.4,0 a2.2,3.2 0 1 0 -4.4,0 Z" />
+</vector>

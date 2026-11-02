@@ -1,7 +1,7 @@
 package eu.darken.capod.common.settings
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Switch
+import com.mudita.mmd.components.switcher.SwitchMMD as Switch
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.Notifications
 import androidx.compose.runtime.Composable

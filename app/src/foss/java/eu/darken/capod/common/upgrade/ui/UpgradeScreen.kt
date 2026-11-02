@@ -6,8 +6,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SnackbarHostState
-import androidx.compose.material3.Button
-import androidx.compose.material3.OutlinedButton
+import com.mudita.mmd.components.buttons.ButtonMMD as Button
+import com.mudita.mmd.components.buttons.OutlinedButtonMMD as OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect

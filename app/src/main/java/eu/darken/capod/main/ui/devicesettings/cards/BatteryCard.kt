@@ -10,7 +10,7 @@ import androidx.compose.material.icons.twotone.Schedule
 import androidx.compose.material.icons.twotone.Workspaces
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton

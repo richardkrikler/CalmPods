@@ -10,8 +10,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.Edit
 import androidx.compose.material.icons.twotone.Info
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ElevatedCard
+import com.mudita.mmd.components.cards.CardDefaultsMMD as CardDefaults
+import eu.darken.capod.common.theming.elevatedCardElevation
+import com.mudita.mmd.components.cards.CardMMD as ElevatedCard
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme

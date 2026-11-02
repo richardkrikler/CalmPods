@@ -13,9 +13,9 @@ import androidx.compose.material.icons.twotone.PauseCircle
 import androidx.compose.material.icons.twotone.PlayCircle
 import androidx.compose.material.icons.twotone.RecordVoiceOver
 import androidx.compose.material.icons.twotone.Workspaces
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Switch
+import com.mudita.mmd.components.switcher.SwitchMMD as Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable

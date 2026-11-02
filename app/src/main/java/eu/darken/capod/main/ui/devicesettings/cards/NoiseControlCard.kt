@@ -16,8 +16,8 @@ import androidx.compose.material.icons.twotone.Headphones
 import androidx.compose.material.icons.twotone.LooksOne
 import androidx.compose.material.icons.twotone.Loop
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Checkbox
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.checkbox.CheckboxMMD as Checkbox
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface

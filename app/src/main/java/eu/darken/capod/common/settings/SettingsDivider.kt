@@ -1,7 +1,7 @@
 package eu.darken.capod.common.settings
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

@@ -10,7 +10,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.twotone.DeviceUnknown
 import androidx.compose.material.icons.twotone.Visibility
 import androidx.compose.material.icons.twotone.VisibilityOff
-import androidx.compose.material3.Card
+import com.mudita.mmd.components.cards.CardMMD as Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text

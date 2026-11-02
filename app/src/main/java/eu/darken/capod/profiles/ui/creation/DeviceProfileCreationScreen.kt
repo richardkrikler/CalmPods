@@ -24,23 +24,23 @@ import androidx.compose.material.icons.twotone.Save
 import androidx.compose.material.icons.twotone.SettingsInputAntenna
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.DropdownMenuItem
-import androidx.compose.material3.ElevatedCard
+import com.mudita.mmd.components.cards.CardMMD as ElevatedCard
 import androidx.compose.material3.ExposedDropdownMenuAnchorType
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
-import androidx.compose.material3.HorizontalDivider
+import com.mudita.mmd.components.divider.HorizontalDividerMMD as HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
+import com.mudita.mmd.components.buttons.OutlinedButtonMMD as OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Slider
+import com.mudita.mmd.components.slider.SliderMMD as Slider
 import androidx.compose.material3.SuggestionChip
 import androidx.compose.material3.SuggestionChipDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
-import androidx.compose.material3.TopAppBar
+import com.mudita.mmd.components.top_app_bar.TopAppBarMMD as TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue

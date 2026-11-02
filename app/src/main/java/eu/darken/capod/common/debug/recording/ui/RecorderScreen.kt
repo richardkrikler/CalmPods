@@ -27,14 +27,14 @@ import androidx.compose.material.icons.twotone.Email
 import androidx.compose.material.icons.twotone.Folder
 import androidx.compose.material.icons.twotone.Info
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
+import com.mudita.mmd.components.cards.CardMMD as Card
+import com.mudita.mmd.components.cards.CardDefaultsMMD as CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
+import com.mudita.mmd.components.buttons.OutlinedButtonMMD as OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
