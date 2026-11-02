@@ -218,7 +218,9 @@ class BleScanner @Inject constructor(
                             break
                         }
                         when (scannerMode) {
-                            ScannerMode.LOW_POWER -> break
+                            // CalmPods: the Kompakt's MediaTek chip holds batches for 30s+ unless flushed.
+                            // ponytail: 3s is a guess, tune against battery drain.
+                            ScannerMode.LOW_POWER -> delay(3000)
                             ScannerMode.BALANCED -> delay(2000)
                             ScannerMode.LOW_LATENCY -> delay(500)
                         }

@@ -3,6 +3,9 @@ package eu.darken.capod.reaction.ui.popup
 import android.content.Context
 import android.content.Context.WINDOW_SERVICE
 import android.graphics.PixelFormat
+import android.os.Handler
+import android.os.Looper
+import android.os.SystemClock
 import android.view.Gravity
 import android.view.WindowManager
 import androidx.compose.runtime.MutableState
@@ -55,6 +58,11 @@ class PopUpWindow @Inject constructor(
 
     @Volatile var isMainActivityVisible: Boolean = false
 
+    // CalmPods: keep the popup up for a minimum time. Pods disagree on the lid state while one is
+    // out of the case, and a popup flashing for 1-2s costs two full E-ink refreshes for nothing.
+    private val handler = Handler(Looper.getMainLooper())
+    private var shownAt = 0L
+
     fun show(device: PodDevice) {
         if (isMainActivityVisible) {
             log(TAG) { "Suppressing popup, MainActivity is visible" }
@@ -62,6 +70,7 @@ class PopUpWindow @Inject constructor(
         }
         try {
             log(TAG, INFO) { "open()" }
+            handler.removeCallbacksAndMessages(null)
 
             if (composeView?.parent != null && deviceState != null) {
                 log(TAG) { "Popup already visible, updating device." }
@@ -95,7 +104,7 @@ class PopUpWindow @Inject constructor(
                     val currentDevice = state.value
                     if (currentDevice != null) {
                         CapodTheme(state = generalSettings.currentThemeState) {
-                            PopUpContent(device = currentDevice, onClose = { close() })
+                            PopUpContent(device = currentDevice, onClose = { close(force = true) })
                         }
                     }
                 }
@@ -107,20 +116,28 @@ class PopUpWindow @Inject constructor(
             owner.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
 
             wm.addView(view, layoutParams)
+            shownAt = SystemClock.uptimeMillis()
         } catch (e: Exception) {
             log(TAG, ERROR) { "open() failed: ${e.asLog()}" }
         }
     }
 
-    fun close() = try {
-        log(TAG, INFO) { "close()" }
-        if (composeView?.parent != null) {
-            teardown()
-        } else {
-            log(TAG) { "View was not added" }
+    fun close(force: Boolean = false) {
+        try {
+            log(TAG, INFO) { "close(force=$force)" }
+            val remaining = MIN_VISIBLE_MS - (SystemClock.uptimeMillis() - shownAt)
+            if (!force && composeView?.parent != null && remaining > 0) {
+                log(TAG) { "Keeping popup for another ${remaining}ms" }
+                handler.removeCallbacksAndMessages(null)
+                handler.postDelayed({ close(force = true) }, remaining)
+            } else if (composeView?.parent != null) {
+                teardown()
+            } else {
+                log(TAG) { "View was not added" }
+            }
+        } catch (e: Exception) {
+            log(TAG, ERROR) { "close() failed: ${e.asLog()}" }
         }
-    } catch (e: Exception) {
-        log(TAG, ERROR) { "close() failed: ${e.asLog()}" }
     }
 
     private fun teardown() {
@@ -160,5 +177,6 @@ class PopUpWindow @Inject constructor(
 
     companion object {
         private val TAG = logTag("Reaction", "PopUp", "Window")
+        private const val MIN_VISIBLE_MS = 8_000L
     }
 }
