@@ -19,6 +19,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapLatest
@@ -54,11 +55,18 @@ class AapAutoConnect @Inject constructor(
         return HANDSHAKE_BACKOFF[minOf(failures - 1, HANDSHAKE_BACKOFF.lastIndex)]
     }
 
-    fun monitor(): Flow<Unit> = merge(
-        initialConnect(),
-        reconnectOnDisconnect(),
-        correctModelOnDeviceInfo(),
-    )
+    // CalmPods: the Kompakt's Android 12 stack can't open the AAP L2CAP channel ("Peer does not support
+    // our desired channel types"). Retrying every few seconds keeps the pods' link awake in a closed case
+    // and drains both batteries, so don't auto-connect AAP there.
+    fun monitor(): Flow<Unit> = if (android.os.Build.MODEL.equals("Kompakt", ignoreCase = true)) {
+        emptyFlow()
+    } else {
+        merge(
+            initialConnect(),
+            reconnectOnDisconnect(),
+            correctModelOnDeviceInfo(),
+        )
+    }
 
     private fun initialConnect(): Flow<Unit> = combine(
         profilesRepo.profiles,
