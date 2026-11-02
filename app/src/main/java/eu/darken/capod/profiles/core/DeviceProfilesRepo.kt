@@ -106,6 +106,10 @@ class DeviceProfilesRepo @Inject constructor(
             val current = settings.profiles.valueBlocking.profiles
             val migrated = current.map { p ->
                 if (p !is AppleDeviceProfile || legacy == null) return@map p
+                // CalmPods: a fresh install has no legacy data; don't overwrite our non-false defaults.
+                val hasLegacyData = legacy.autoPause || legacy.autoPlay || legacy.autoConnect ||
+                    legacy.showPopUpOnCaseOpen || legacy.showPopUpOnConnection || legacy.onePodMode
+                if (!hasLegacyData) return@map p
                 val features = p.model.features
                 val coercedCondition = when {
                     legacy.autoConnectCondition == AutoConnectCondition.IN_EAR && !features.hasEarDetection ->

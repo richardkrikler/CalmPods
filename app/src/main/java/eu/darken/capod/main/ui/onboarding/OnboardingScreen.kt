@@ -58,7 +58,7 @@ fun OnboardingScreen(
             Spacer(modifier = Modifier.height(48.dp))
 
             Image(
-                painter = painterResource(R.drawable.splash_graphic2),
+                painter = painterResource(R.drawable.ic_calmpods_foreground),
                 contentDescription = null,
                 modifier = Modifier.size(96.dp),
             )

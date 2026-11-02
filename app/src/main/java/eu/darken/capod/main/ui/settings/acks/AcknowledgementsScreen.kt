@@ -1,7 +1,7 @@
 package eu.darken.capod.main.ui.settings.acks
 
 import androidx.compose.foundation.layout.fillMaxSize
-import eu.darken.capod.common.theming.EinkLazyColumn as LazyColumn
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.twotone.ArrowBack
 import androidx.compose.material3.Icon

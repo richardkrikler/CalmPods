@@ -51,8 +51,8 @@
     </style>
 
     <style name="AppThemeSplash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#3f7aff</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_calmpods_foreground</item>
         <item name="postSplashScreenTheme">@style/AppTheme</item>
 
         <item tools:targetApi="29" name="android:navigationBarColor">@android:color/transparent</item>
